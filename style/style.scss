@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+:root{
+    --color-primary: #0077ff;
+    --dark-60: #667093;
+    --dark: #00104b;
+    
+}
+body{
+    font-family: 'Figtree', sans-serif;
+    color: var(--dark-60);
+    transition:all .4s ease-in-out;
+}
+section{
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*padding: 3rem 18rem;*/
+}
+.standar-input{
+    width: 100%;
+    border-radius: 6px;
+}
+.form-grid{
+    display: grid;
+    grid-gap: 20px;
+    justify-content: center;
+}
