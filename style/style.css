@@ -13,17 +13,28 @@
 }
 
 body {
-  font-family: 'Figtree', sans-serif;
+  font-family: "Figtree", sans-serif;
   color: var(--grey);
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 main {
-  /* justify-content: center; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
 }
 
 section {
@@ -34,13 +45,6 @@ section {
   top: 0;
 }
 
-.standar-input {
-  border-radius: 1px solid var(--grey);
-  border-radius: 6px;
-  color: var(--text-dark-color);
-  background-color: white;
-}
-
 .form-grid {
   display: -ms-grid;
   display: grid;
@@ -48,5 +52,47 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.input-field {
+  position: relative;
+}
+
+.input-field .standar-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccfdb;
+  border-radius: 6px;
+  color: var(--text-dark-color);
+  background-color: white;
+  outline: none;
+  font-size: inherit;
+}
+
+.input-field span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  color: #cccfdb;
+  font-weight: 500;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.input-field input:valid ~ span,
+.input-field input:focus ~ span {
+  color: var(--color-primary);
+  -webkit-transform: translateX(10px) translateY(-7px);
+          transform: translateX(10px) translateY(-7px);
+  padding: 0 10px;
+  background-color: white;
+  border-left: 1px solid var(--color-primary);
+}
+
+.input-field input:valid,
+.input-field input:focus {
+  border: 1px solid var(--color-primary);
 }
 /*# sourceMappingURL=style.css.map */
