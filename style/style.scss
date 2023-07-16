@@ -6,14 +6,18 @@
 }
 :root{
     --color-primary: #0077ff;
-    --dark-60: #667093;
-    --dark: #00104b;
+    --grey: #667093;
+    --text-dark-color: #00104b;
     
 }
 body{
     font-family: 'Figtree', sans-serif;
-    color: var(--dark-60);
+    color: var(--grey);
     transition:all .4s ease-in-out;
+}
+main{
+   /* justify-content: center; */
+   display: flex;
 }
 section{
     min-height: 100vh;
@@ -21,11 +25,13 @@ section{
     position: absolute;
     left: 0;
     top: 0;
-    /*padding: 3rem 18rem;*/
+  
 }
 .standar-input{
-    width: 100%;
+    border-radius: 1px solid var(--grey);
     border-radius: 6px;
+    color:var(--text-dark-color) ;
+    background-color: white;
 }
 .form-grid{
     display: grid;
