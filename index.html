@@ -1,48 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ottonova</title>
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;500;700;900&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body class="main-content">
-    <header></header>
+  <body class="main-content">
+    <!--header-->
+    <header>header</header>
+
     <main>
-        <section>
-            <h2> register </h2>
-            <form>
-                <div class="form-grid">
-                    <div class="input-field">
-                        <input class="standar-input" type="text" required="required">
-                        <span>First Name</span>
-                    </div>
-                    <div class="input-field">
-                        <input class="standar-input" type="text" required="required">
-                        <span>Last Name</span>
-                    </div>
-                    <div class="input-field">
-                        <input class="standar-input" type="email" required="required">
-                        <span>E-mail</span>
-                    </div>
-                    <div class="input-field">
-                        <input class="standar-input" type="number" required="required">
-                        <span>Phone Number</span>
-                    </div>
-                    <button>send</button>
-                </div>
-            </form>
+      <div class="container">
+        <!-- left section-->
+        <!-- form -->
+        <section class="left-sec">
+          <h2>register</h2>
+          <form>
+            <div class="form-grid">
+              <div class="input-field">
+                <input class="standar-input" type="text" required="required" />
+                <span>First Name</span>
+              </div>
+              <div class="input-field">
+                <input class="standar-input" type="text" required="required" />
+                <span>Last Name</span>
+              </div>
+              <div class="input-field">
+                <input class="standar-input" type="email" required="required" />
+                <span>E-mail</span>
+              </div>
+              <div class="input-field">
+                <input
+                  class="standar-input"
+                  type="number"
+                  required="required"
+                />
+                <span>Phone Number</span>
+              </div>
+              <button>send</button>
+            </div>
+          </form>
         </section>
+        <!-- Right section-->
+        <!-- disappeard in mobile view-->
+        <section class="right-sec">
+          <!-- this shape is behind the picture-->
+          <div class="shape"></div>
+
+          <img src="./assets/studenten-hero-image.png" alt="MDN" />
+        </section>
+      </div>
     </main>
-    <footer>
-
-    </footer>
-</body>
-
+    <footer>footer</footer>
+  </body>
 </html>
