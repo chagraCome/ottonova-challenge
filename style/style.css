@@ -17,8 +17,6 @@ body {
   color: var(--grey);
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  margin: auto;
-  width: 50%;
 }
 
 header {
@@ -46,6 +44,7 @@ main {
   -ms-grid-columns: 55% auto;
       grid-template-columns: 55% auto;
   max-width: 1200px;
+  margin: auto;
 }
 
 .right-sec {
@@ -74,13 +73,30 @@ main {
   left: 0;
   top: 0;
 }*/
+h1 {
+  font-weight: 850;
+  font-size: 40px;
+  color: var(--text-dark-color);
+  font-family: inherit;
+  margin: 0 0 24px 0;
+}
+
+/*svg{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: var(--text-dark-color);
+}*/
+.left-sec {
+  margin: auto 30px;
+}
+
 .form-grid {
   display: -ms-grid;
   display: grid;
   grid-gap: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .input-field {

@@ -13,8 +13,7 @@ body {
   font-family: "Figtree", sans-serif;
   color: var(--grey);
   transition: all 0.4s ease-in-out;
-  margin: auto;
-  width: 50%;
+
 }
 header{
   position: fixed;
@@ -42,6 +41,7 @@ main {
   display: grid;
   grid-template-columns: 55% auto;
   max-width: 1200px;
+  margin: auto;
 }
 .right-sec{
   position: relative;;
@@ -68,6 +68,21 @@ main {
   left: 0;
   top: 0;
 }*/
+h1{
+  font-weight: 850;
+  font-size: 40px;
+  color: var(--text-dark-color);
+  font-family: inherit;
+  margin: 0 0 24px 0;
+}
+/*svg{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: var(--text-dark-color);
+}*/
 
 
 
@@ -75,12 +90,14 @@ main {
 
 
 
-
+.left-sec{
+  margin: auto 30px;
+}
 
 .form-grid {
   display: grid;
   grid-gap: 20px;
-  justify-content: center;
+  //justify-content: center;
 }
 .input-field {
   position: relative;
