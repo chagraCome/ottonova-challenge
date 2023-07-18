@@ -20,7 +20,8 @@ header{
   top: 0;
   right: 0;
   left: 0;
-  background-color: lightcyan;
+  background-color: white;
+  height: 40px;
 }
 footer{
   //position: fixed;
@@ -36,6 +37,7 @@ main {
  // flex-direction: row;
   //gap: 30px;
   margin-top: 30px;
+  background-color: #d3d3d30f;
 }
 .container{
   display: grid;
@@ -56,7 +58,7 @@ main {
     width: 30%;
     background-color: #d6a9d078;
     bottom: 0;
-    top: 0;
+    top: 50px;
     right: 0px;
     left: 50px;
   }
@@ -68,21 +70,27 @@ main {
   left: 0;
   top: 0;
 }*/
-h1{
-  font-weight: 850;
-  font-size: 40px;
+h2{
+  font-weight: 700;
+  font-size: 30px;
   color: var(--text-dark-color);
   font-family: inherit;
   margin: 0 0 24px 0;
 }
-/*svg{
-  width: 20px;
-  height: 20px;
+li{
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 20px;
+
+svg{
+  width: 15px;
+  height: 15px;
   position: absolute;
   left: 0;
   top: 2px;
-  color: var(--text-dark-color);
-}*/
+  color: var(--color-primary);
+}
+}
 
 
 
@@ -98,6 +106,7 @@ h1{
   display: grid;
   grid-gap: 20px;
   //justify-content: center;
+  margin: 30px auto;
 }
 .input-field {
   position: relative;
