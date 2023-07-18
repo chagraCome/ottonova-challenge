@@ -9,6 +9,7 @@
 :root {
   --color-primary: #0077ff;
   --grey: #667093;
+  --border-color:#cccfdb;
   --text-dark-color: #00104b;
 }
 
@@ -98,6 +99,28 @@ li svg {
   color: var(--color-primary);
 }
 
+.gender-container-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.gender-container-area .gender-container {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  height: 7rem;
+  width: 7rem;
+}
+
 .left-sec {
   margin: auto 30px;
 }
@@ -116,7 +139,7 @@ li svg {
 .input-field .standar-input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #cccfdb;
+  border: 1px solid var(--border-color);
   border-radius: 6px;
   color: var(--text-dark-color);
   background-color: white;
@@ -129,7 +152,7 @@ li svg {
   left: 0;
   padding: 10px;
   pointer-events: none;
-  color: #cccfdb;
+  color: var(--border-color);
   font-weight: 500;
   text-transform: uppercase;
   -webkit-transition: 0.5s;
