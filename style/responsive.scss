@@ -1,11 +1,9 @@
-@media (min-width: 991px) {
+@media  only screen and (max-width: 991px) {
 .main{
     display: flex;
 .container{
     display: flex !important;
     flex-direction: row;
-    grid-template-areas: "right-sec"
-    "left-sec";
     .right-sec{
         display: none;
     }
