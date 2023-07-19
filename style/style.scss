@@ -92,19 +92,94 @@ li {
   gap: 30px;
   justify-content: center;
   margin: 0 auto;
+  
+  
+  
+  
   .gender-container {
     display: flex;
     border: 1px solid var(--border-color);
     border-radius: 6px;
     height: 7rem;
-    width: 7rem;
-    
+    width: 8rem;
+  }
+    label {
+      box-sizing: border-box;
+      display: block;
+      height: 100%;
+      width: 100%;
+      cursor: pointer;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+      transition: all .3s ease-in-out;
+      &:hover, &:focus, &:checked{
+        background-color: var(--color-primary);
+        border: 2px solid var(--color-primary);
+        outline: none;
+        path,rect,circle {
+          fill: white;
+        }
+        #male-leftarm{
+          animation: wave 2s ;
+          transform-origin: 69px 33px;
+        }
+        #female-leftarm{
+          animation: wave 2s ;
+          transform-origin: 69px 33px;
+        }
+
+      }
+    }
+
     svg{
       display: block;
       margin: auto;
     }
+  
+    
+    input[type=radio] {
+      width: 0;
+      height: 0;
+      position: absolute;
+    }
+    
+    input[type="radio"]:active + label {
+      border-radius: 6px;
+      border: 2px solid var(--color-primary);
+    }
+    input[type="radio"]:checked + label{
+      border-color: green;
+      border-radius: 6px;
+      border: 2px solid var(--color-primary);
+    }
+    input[type="radio"]:checked {
+      #male-leftarm {animation: wave 2s ;
+      transform-origin: 69px 33px;
+    }
   }
+  
+  
+  @keyframes wave {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-40deg);
+    }
+    30%{
+      transform: rotate(-130deg);
+    }
+    50% {
+      transform: rotate(-150deg);
+    }
+    75% {
+      transform: rotate(-160deg);
+    }
+  }
+
+ 
 }
+
 
 .left-sec {
   margin: auto 30px;
@@ -149,16 +224,15 @@ li {
 input:-internal-autofill-selected {
   background-color: transparent !important;
 }
-  b
-.input-field.error {
-  input {
+  
+.input-field.error input {
     border: 1px solid #ff5252;
     border-radius: 6px;
   }
-  span {
+  .input-field.error span {
     color: #ff5252;
   }
-}
+
 .input-field.success {
   input {
     border: 1px solid var(--color-primary);

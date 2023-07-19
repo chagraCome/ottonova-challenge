@@ -24,7 +24,7 @@
         <!-- left section-->
         <!-- form -->
         <section class="left-sec">
-          
+          <div id="greeting">
           <h2>Because it's important to us that you feel well advised.</h2>
           <ul>
             <li> 
@@ -40,39 +40,51 @@
               <path fill="white" d="M14.868 6.263a1 1 0 01.061 1.413l-5.5 6a1 1 0 01-1.444.031l-2.5-2.5a1 1 0 111.414-1.414l1.762 1.761 4.794-5.23a1 1 0 011.413-.061z"></path>
             </svg> <p><strong>Expert insurance market comparison</strong>
               <small>We help you understand differences in insurance</small></p></li>
-            
           </ul>
-          <form id="form">
+          <button id="showFormBtn"> Get a free consultation</button>
+        </div>
+          <form id="form" style="display: none;">
             <div class="form-grid">
               <div class="gender-container-area">
-                <div class="gender-container"><svg width="54" height="79" viewBox="0 0 54 79" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="31.7546" y="58.9153" width="4.2335" height="20.0847" fill="#55BEF9"/>
-                  <rect x="16.2318" y="58.9153" width="4.2335" height="20.0847" fill="#55BEF9"/>
-                  <path d="M24.285 24.1552C24.9914 22.5795 27.2285 22.5795 27.9349 24.1552L41.9559 55.4275C42.5491 56.7508 41.581 58.2458 40.1309 58.2458H12.089C10.6389 58.2458 9.67076 56.7508 10.264 55.4275L24.285 24.1552Z" fill="#55BEF9"/>
-                  <path d="M31.3326 25.3282L48.6117 51.0488L44.4541 53.1732L31.3326 25.3282Z" fill="#55BEF9"/>
-                  <path d="M31.3326 25.3282L48.6117 51.0488L44.4541 53.1732L31.3326 25.3282Z" fill="#55BEF9"/>
-                  <path d="M31.3326 25.3282L48.6117 51.0488L44.4541 53.1732L31.3326 25.3282Z" fill="#55BEF9"/>
-                  <path d="M31.3326 25.3282L48.6117 51.0488L44.4541 53.1732L31.3326 25.3282Z" fill="#55BEF9"/>
-                  <path d="M20.0525 24.405L9.02962 53.0574L4.72476 51.2161L20.0525 24.405Z" fill="#55BEF9"/>
-                  <path d="M20.0525 24.405L9.02962 53.0574L4.72476 51.2161L20.0525 24.405Z" fill="#55BEF9"/>
-                  <path d="M20.0525 24.405L9.02962 53.0574L4.72476 51.2161L20.0525 24.405Z" fill="#55BEF9"/>
-                  <path d="M20.0525 24.405L9.02962 53.0574L4.72476 51.2161L20.0525 24.405Z" fill="#55BEF9"/>
-                  <ellipse cx="26.11" cy="9.37288" rx="9.87816" ry="9.37288" fill="#1CA8F8" fill-opacity="0.75"/>
-                  </svg></div>
-                <div class="gender-container"><svg width="54" height="79" viewBox="0 0 54 79" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="31.7546" y="58.9153" width="4.2335" height="20.0847" fill="#55BEF9"/>
-                  <rect x="16.2318" y="58.9153" width="4.2335" height="20.0847" fill="#55BEF9"/>
-                  <path d="M24.285 24.1552C24.9914 22.5795 27.2285 22.5795 27.9349 24.1552L41.9559 55.4275C42.5491 56.7508 41.581 58.2458 40.1309 58.2458H12.089C10.6389 58.2458 9.67076 56.7508 10.264 55.4275L24.285 24.1552Z" fill="#55BEF9"/>
-                  <path d="M31.3326 25.3282L48.6117 51.0488L44.4541 53.1732L31.3326 25.3282Z" fill="#55BEF9"/>
-                  <path d="M31.3326 25.3282L48.6117 51.0488L44.4541 53.1732L31.3326 25.3282Z" fill="#55BEF9"/>
-                  <path d="M31.3326 25.3282L48.6117 51.0488L44.4541 53.1732L31.3326 25.3282Z" fill="#55BEF9"/>
-                  <path d="M31.3326 25.3282L48.6117 51.0488L44.4541 53.1732L31.3326 25.3282Z" fill="#55BEF9"/>
-                  <path d="M20.0525 24.405L9.02962 53.0574L4.72476 51.2161L20.0525 24.405Z" fill="#55BEF9"/>
-                  <path d="M20.0525 24.405L9.02962 53.0574L4.72476 51.2161L20.0525 24.405Z" fill="#55BEF9"/>
-                  <path d="M20.0525 24.405L9.02962 53.0574L4.72476 51.2161L20.0525 24.405Z" fill="#55BEF9"/>
-                  <path d="M20.0525 24.405L9.02962 53.0574L4.72476 51.2161L20.0525 24.405Z" fill="#55BEF9"/>
-                  <ellipse cx="26.11" cy="9.37288" rx="9.87816" ry="9.37288" fill="#1CA8F8" fill-opacity="0.75"/>
-                  </svg> </div>
+                <p class="gender-container">
+                <input type="radio"  name="gender" id="gender" value="female" >
+                <label for="female" >
+                  <svg id="female-svg" width="120" height="100" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="femalesign" class="female-svg-group">
+                    <g id="female-leftarm">
+                    <rect id="female-arm" x="64" y="33.217" width="5.32482" height="28.9707" rx="2.66241" transform="rotate(-24.6048 64 33.217)" fill="#C5CBCF"/>
+                    </g>
+                    <g id="rest">
+                    <path id="Rectangle 2" d="M63 65H70V81.5847C70 83.5177 68.433 85.0847 66.5 85.0847C64.567 85.0847 63 83.5177 63 81.5847V65Z" fill="#C5CBCF"/>
+                    <rect id="Rectangle 4" x="51.0599" y="31" width="5.32482" height="28.9707" rx="2.66241" transform="rotate(24.6 51.0599 31)" fill="#C5CBCF"/>
+                    <path id="Rectangle 1" d="M50 65H57V81.5847C57 83.5177 55.433 85.0847 53.5 85.0847C51.567 85.0847 50 83.5177 50 81.5847V65Z" fill="#C5CBCF"/>
+                    <path id="Polygon 1" d="M56.46 35.2256C57.8729 32.0742 62.347 32.0742 63.7599 35.2256L74.6923 59.6093C75.8788 62.2558 73.9426 65.2458 71.0424 65.2458H49.1775C46.2773 65.2458 44.341 62.2558 45.5276 59.6093L56.46 35.2256Z" fill="#C5CBCF"/>
+                    <circle id="Ellipse 1" cx="60.5" cy="21.5" r="7.5" fill="#C5CBCF"/>
+                    <path id="Polygon 2" d="M61.7459 42.1035C61.0158 42.6762 59.9877 42.6714 59.2629 42.092L49.8897 34.5996C48.409 33.416 49.2522 31.0286 51.1477 31.0374L69.9629 31.1245C71.8585 31.1332 72.6795 33.5283 71.188 34.6982L61.7459 42.1035Z" fill="#C5CBCF"/>
+                    </g>
+                    </g>
+                    </svg>
+                  </label>
+                </p>
+              <p class="gender-container">
+                  <input type="radio"  name="gender" id="gender"  value="male">
+                <label  for="male">
+                  <svg id="male-svg" width="120" height="100" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="malesign" class="male-svg-group">
+                    <g id="male-leftarm">
+                    <path id="male-arm" d="M65.3279 32.718C64.7441 31.4095 65.33 29.872 66.6366 29.2839V29.2839C68.7271 28.3429 71.179 29.2773 72.113 31.3709L80.8515 50.9574C81.6104 52.6585 80.8487 54.6572 79.1502 55.4218V55.4218C77.4517 56.1863 75.4595 55.4272 74.7006 53.7261L65.3279 32.718Z" fill="#C5CBCF"/>
+                    </g>
+                    <g id="rest">
+                    <path id="rightarm" d="M45.4256 31.3874C46.2774 29.5097 48.4901 28.678 50.3678 29.5297V29.5297C52.0108 30.275 52.7385 32.2111 51.9932 33.8541L42.4078 54.985C41.6093 56.7454 39.5349 57.5251 37.7745 56.7265V56.7265C36.0142 55.928 35.2345 53.8536 36.033 52.0933L45.4256 31.3874Z" fill="#C5CBCF"/>
+                    <path id="Rectangle 2" d="M60.9578 60H68.9578V85C68.9578 87.2091 67.167 89 64.9578 89C62.7487 89 60.9578 87.2091 60.9578 85V60Z" fill="#C5CBCF"/>
+                    <path id="Rectangle 1" d="M47.9578 59H55.9578V85C55.9578 87.2091 54.167 89 51.9578 89C49.7487 89 47.9578 87.2091 47.9578 85V59Z" fill="#C5CBCF"/>
+                    <circle id="Ellipse 1" cx="58.5" cy="18.5" r="7.5" fill="#C5CBCF"/>
+                    <path id="Rectangle 5" d="M48 30C48 29.4477 48.4477 29 49 29H68C68.5523 29 69 29.4477 69 30V60H48V30Z" fill="#C5CBCF"/>
+                    </g>
+                    </g>
+                    </svg>
+                </label>
+              </p>
               </div>
               <div class="input-field">
                 <span>First Name</span>
@@ -101,6 +113,10 @@
               <button type="submit">send</button>
             </div>
           </form>
+          <div id="message" style="display: none;">
+            <h2>Awsome !</h2>
+            <h3> we will contact you soon</h3>
+          </div>
         </section>
         <!-- Right section-->
         <!-- disappeard in mobile view-->

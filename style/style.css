@@ -114,12 +114,119 @@ li svg {
   border: 1px solid var(--border-color);
   border-radius: 6px;
   height: 7rem;
-  width: 7rem;
+  width: 8rem;
 }
 
-.gender-container-area .gender-container svg {
+.gender-container-area label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.gender-container-area label:hover, .gender-container-area label:focus, .gender-container-area label:checked {
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  outline: none;
+}
+
+.gender-container-area label:hover path, .gender-container-area label:hover rect, .gender-container-area label:hover circle, .gender-container-area label:focus path, .gender-container-area label:focus rect, .gender-container-area label:focus circle, .gender-container-area label:checked path, .gender-container-area label:checked rect, .gender-container-area label:checked circle {
+  fill: white;
+}
+
+.gender-container-area label:hover #male-leftarm, .gender-container-area label:focus #male-leftarm, .gender-container-area label:checked #male-leftarm {
+  -webkit-animation: wave 2s;
+          animation: wave 2s;
+  -webkit-transform-origin: 69px 33px;
+          transform-origin: 69px 33px;
+}
+
+.gender-container-area label:hover #female-leftarm, .gender-container-area label:focus #female-leftarm, .gender-container-area label:checked #female-leftarm {
+  -webkit-animation: wave 2s;
+          animation: wave 2s;
+  -webkit-transform-origin: 69px 33px;
+          transform-origin: 69px 33px;
+}
+
+.gender-container-area svg {
   display: block;
   margin: auto;
+}
+
+.gender-container-area input[type=radio] {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.gender-container-area input[type="radio"]:active + label {
+  border-radius: 6px;
+  border: 2px solid var(--color-primary);
+}
+
+.gender-container-area input[type="radio"]:checked + label {
+  border-color: green;
+  border-radius: 6px;
+  border: 2px solid var(--color-primary);
+}
+
+.gender-container-area input[type="radio"]:checked #male-leftarm {
+  -webkit-animation: wave 2s;
+          animation: wave 2s;
+  -webkit-transform-origin: 69px 33px;
+          transform-origin: 69px 33px;
+}
+
+@-webkit-keyframes wave {
+  0%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+  }
+  30% {
+    -webkit-transform: rotate(-130deg);
+            transform: rotate(-130deg);
+  }
+  50% {
+    -webkit-transform: rotate(-150deg);
+            transform: rotate(-150deg);
+  }
+  75% {
+    -webkit-transform: rotate(-160deg);
+            transform: rotate(-160deg);
+  }
+}
+
+@keyframes wave {
+  0%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+  }
+  30% {
+    -webkit-transform: rotate(-130deg);
+            transform: rotate(-130deg);
+  }
+  50% {
+    -webkit-transform: rotate(-150deg);
+            transform: rotate(-150deg);
+  }
+  75% {
+    -webkit-transform: rotate(-160deg);
+            transform: rotate(-160deg);
+  }
 }
 
 .left-sec {
@@ -172,13 +279,11 @@ input:-internal-autofill-selected {
   background-color: transparent !important;
 }
 
-b
 .input-field.error input {
   border: 1px solid #ff5252;
   border-radius: 6px;
 }
 
-b
 .input-field.error span {
   color: #ff5252;
 }
