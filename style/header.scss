@@ -1,13 +1,19 @@
 header {
+  justify-content: center;
+  align-items: center;
+  background-color: #d3d3d352;
+  height: 60px;
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto 30px;
+    padding: 15px 0;
+    margin: 0 auto;
 
-    background-color: white;
-    height: 60px;
-    .header-container{
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        max-width: 1200px;
-        margin: auto 30px;
-        padding: 15px 0;
+    .logo {
+      margin-left: 30px;
     }
   }
+}
