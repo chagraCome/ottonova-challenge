@@ -41,7 +41,7 @@ const ValideEmail = () => {
   if (emailVal === "") {
     sendError(email, "email is required");
   } else if (!re.test(emailVal)) {
-    sendError(email, "Provide a correct form of E-mail");
+    sendError(email, "Provide a correct form of E-mail xxx@xxxx.xx");
   } else {
     sendSuccess(email);
     return true;
@@ -86,7 +86,7 @@ const Validtelefone = () => {
   if (telefoneVal.value === "") {
     sendError(telefone, "phone number is required");
   } else if (!re.test(telefoneVal)) {
-    sendError(telefone, "Provide a valid phone number");
+    sendError(telefone, "Provide a valid german phone number");
   } else {
     sendSuccess(telefone);
     return true;
