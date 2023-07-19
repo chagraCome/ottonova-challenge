@@ -249,18 +249,3 @@ button {
   font-weight: 500;
 }
 
-@media  only screen and (max-width: 991px) {
-  .main{
-      display: flex;
-  .container{
-      display: flex !important;
-      flex-direction: row;
-      .right-sec{
-          display: none;
-      }
-  }
-  button{
-      font-size: 14px;
-      font-weight: normal;
-  }
-  }}
