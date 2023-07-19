@@ -1,4 +1,4 @@
-@media (max-width: 991px) {
+@media (min-width: 991px) {
   .main {
     display: -webkit-box;
     display: -ms-flexbox;
