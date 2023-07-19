@@ -7,16 +7,15 @@
 :root {
   --color-primary: #0077ff;
   --grey: #667093;
-  --border-color:#cccfdb;
+  --border-color: #cccfdb;
   --text-dark-color: #00104b;
 }
 body {
   font-family: "Figtree", sans-serif;
   color: var(--grey);
   transition: all 0.4s ease-in-out;
-
 }
-header{
+header {
   position: fixed;
   top: 0;
   right: 0;
@@ -24,7 +23,7 @@ header{
   background-color: white;
   height: 40px;
 }
-footer{
+footer {
   //position: fixed;
   background-color: lightgrey;
   height: 40px;
@@ -35,25 +34,25 @@ main {
   //justify-content: center;
   //align-items: center;
   min-height: 100vh;
- // flex-direction: row;
+  // flex-direction: row;
   //gap: 30px;
   margin-top: 30px;
   background-color: #d3d3d30f;
 }
-.container{
+.container {
   display: grid;
   grid-template-columns: 55% auto;
   max-width: 1200px;
   margin: auto;
 }
-.right-sec{
-  position: relative;;
+.right-sec {
+  position: relative;
   //background-color: lightpink;
-  img{
+  img {
     width: 100%;
     position: relative;
   }
-  .shape{
+  .shape {
     position: absolute;
     //height: 100%;
     width: 30%;
@@ -64,46 +63,36 @@ main {
     left: 50px;
   }
 }
-/*section {
-  min-height: 100vh;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-}*/
-h2{
+
+h2 {
   font-weight: 700;
   font-size: 30px;
   color: var(--text-dark-color);
   font-family: inherit;
   margin: 0 0 24px 0;
 }
-li{
+li {
   position: relative;
   padding-left: 25px;
   margin-bottom: 20px;
 
-svg{
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  left: 0;
-  top: 2px;
-  color: var(--color-primary);
+  svg {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: var(--color-primary);
+  }
 }
-}
 
-
-
-
-
-.gender-container-area{
+.gender-container-area {
   display: flex;
   flex-direction: row;
   gap: 30px;
   justify-content: center;
   margin: 0 auto;
-  .gender-container{
+  .gender-container {
     border: 1px solid var(--border-color);
     border-radius: 6px;
     height: 7rem;
@@ -111,20 +100,20 @@ svg{
   }
 }
 
-.left-sec{
+.left-sec {
   margin: auto 30px;
 }
 
 .form-grid {
   display: grid;
   grid-gap: 20px;
-  //justify-content: center;
   margin: 30px auto;
 }
 .input-field {
   position: relative;
 
   .standar-input {
+    height: 50px;
     width: 100%;
     padding: 10px;
     border: 1px solid var(--border-color);
@@ -132,37 +121,59 @@ svg{
     color: var(--text-dark-color);
     background-color: white;
     outline: none;
-    font-size: inherit;
+    font-size: 16px;
   }
   span {
     position: absolute;
     left: 0;
-    padding: 10px;
+    padding: 0 10px;
     pointer-events: none;
     color: var(--border-color);
     font-weight: 500;
+    font-size: 16px;
     text-transform: uppercase;
-    transition: 0.5s;
+    transform: translateX(10px) translateY(-7px);
+    background-color: white;
   }
   input:valid ~ span,
   input:focus ~ span {
     color: var(--color-primary);
-    transform: translateX(10px) translateY(-7px);
-    padding: 0 10px;
-    background-color: white;
-    border-left: 1px solid var(--color-primary);
   }
-  input:valid ,
-  input:focus {
-    border: 1px solid var(--color-primary);
 }
+input:-internal-autofill-selected {
+  background-color: transparent !important;
 }
-button{
-    background-color: var(--color-primary);
+  b
+.input-field.error {
+  input {
+    border: 1px solid #ff5252;
     border-radius: 6px;
-    border-style: none;
-    color: white;
-    text-align: center;
-    padding: 12px 24px;
+  }
+  span {
+    color: #ff5252;
+  }
+}
+.input-field.success {
+  input {
+    border: 1px solid var(--color-primary);
+    border-radius: 6px;
+   
+  }
+  span {
+    color: var(--color-primary);
+  }
+}
+.input-field .error {
+  color: #ff5252;
+  font-size: 14px;
+  height: 13px;
+}
 
+button {
+  background-color: var(--color-primary);
+  border-radius: 6px;
+  border-style: none;
+  color: white;
+  text-align: center;
+  padding: 12px 24px;
 }

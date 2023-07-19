@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <script defer src="control/index.js"></script>
   </head>
 
   <body class="main-content">
@@ -41,7 +42,7 @@
               <small>We help you understand differences in insurance</small></p></li>
             
           </ul>
-          <form>
+          <form id="form">
             <div class="form-grid">
               <div class="gender-container-area">
                 <div class="gender-container"><svg width="54" height="79" viewBox="0 0 54 79" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -74,26 +75,30 @@
                   </svg> </div>
               </div>
               <div class="input-field">
-                <input class="standar-input" type="text" required="required" />
                 <span>First Name</span>
+                <input class="standar-input" id="firstname" name="firstname" type="text" />
+                
+                <label class="error"></label>
               </div>
               <div class="input-field">
-                <input class="standar-input" type="text" required="required" />
                 <span>Last Name</span>
+                <input class="standar-input" id="lastname" name="lastname" type="text" />
+                
+                <label class="error"></label>
               </div>
               <div class="input-field">
-                <input class="standar-input" type="email" required="required" />
                 <span>E-mail</span>
+                <input class="standar-input" id="email" name="email" type="text"  />
+                
+                <label class="error"></label>
               </div>
               <div class="input-field">
-                <input
-                  class="standar-input"
-                  type="number"
-                  required="required"
-                />
                 <span>Phone Number</span>
+                <input class="standar-input" id="telefone" name="telefone" type="text" />
+                
+                <label class="error"></label>
               </div>
-              <button>send</button>
+              <button type="submit">send</button>
             </div>
           </form>
         </section>
