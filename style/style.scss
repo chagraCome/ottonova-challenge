@@ -1,3 +1,6 @@
+@import "responsive";
+@import "header";
+@import "footer";
 * {
   margin: 0;
   padding: 0;
@@ -15,27 +18,10 @@ body {
   color: var(--grey);
   transition: all 0.4s ease-in-out;
 }
-header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  background-color: white;
-  height: 40px;
-}
-footer {
-  //position: fixed;
-  background-color: lightgrey;
-  height: 40px;
-  max-width: 1200px;
-}
+
+
 main {
-  //display: grid;
-  //justify-content: center;
-  //align-items: center;
   min-height: 100vh;
-  // flex-direction: row;
-  //gap: 30px;
   margin-top: 30px;
   background-color: #d3d3d30f;
 }
@@ -44,20 +30,21 @@ main {
   grid-template-columns: 55% auto;
   max-width: 1200px;
   margin: auto;
+  padding-top: 30px;
 }
 .right-sec {
+  grid-area: "right-sec";
   position: relative;
-  //background-color: lightpink;
+  
   img {
     width: 100%;
     position: relative;
   }
   .shape {
     position: absolute;
-    //height: 100%;
     width: 30%;
     background-color: #d6a9d078;
-    bottom: 0;
+    bottom: 30px;
     top: 50px;
     right: 0px;
     left: 50px;
@@ -182,6 +169,7 @@ li {
 
 
 .left-sec {
+  grid-area: "left-sec";
   margin: auto 30px;
 }
 

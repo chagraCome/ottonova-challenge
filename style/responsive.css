@@ -1,0 +1,25 @@
+@media (max-width: 991px) {
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main .container {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+        grid-template-areas: "right-sec" "left-sec";
+  }
+  .main .container .right-sec {
+    display: none;
+  }
+  .main button {
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
