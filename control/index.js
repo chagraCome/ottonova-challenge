@@ -29,7 +29,10 @@ const showForm = () => {
 };
 
 // Attach showForm function to the "Get a free consultation" button's click event
-showFormBtn.addEventListener("click", showForm);
+showFormBtn.addEventListener("click",function() {
+    greetingDiv.style.display = "none";
+    showForm()
+}) ;
 
 const ValideEmail = () => {
   const re =
