@@ -108,10 +108,18 @@ li svg {
 }
 
 .gender-container-area .gender-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border: 1px solid var(--border-color);
   border-radius: 6px;
   height: 7rem;
   width: 7rem;
+}
+
+.gender-container-area .gender-container svg {
+  display: block;
+  margin: auto;
 }
 
 .left-sec {

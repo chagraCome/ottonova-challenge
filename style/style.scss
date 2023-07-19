@@ -93,10 +93,16 @@ li {
   justify-content: center;
   margin: 0 auto;
   .gender-container {
+    display: flex;
     border: 1px solid var(--border-color);
     border-radius: 6px;
     height: 7rem;
     width: 7rem;
+    
+    svg{
+      display: block;
+      margin: auto;
+    }
   }
 }
 
